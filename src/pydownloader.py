@@ -94,7 +94,8 @@ def pre_download_check(file_name, output_dir):
         return False
 
 
-def download(url: str, file_name: str, output_dir: str = './download', retry_times: int = 3, each_size=16*MB) -> None:
+def download(url: str, file_name: str, output_dir: str = './download', check=True,
+             retry_times: int = 3, each_size=16*MB) -> None:
     '''
     根据文件直链和文件名下载文件
 
@@ -108,10 +109,13 @@ def download(url: str, file_name: str, output_dir: str = './download', retry_tim
     None
 
     '''
+
     download_file_path = Path(output_dir) / file_name
-    if pre_download_check(file_name, output_dir):
-        answer_yes = ask_user(
-            f" ⛔️ {str(download_file_path)} already exists, overwrite it?")
+
+    if check:
+        if pre_download_check(file_name, output_dir):
+            answer_yes = ask_user(
+                f" ⛔️ {str(download_file_path)} already exists, overwrite it?")
     else:
         answer_yes = True
 
@@ -180,9 +184,9 @@ def test_download_from_github():
     print(file_md5)
 
 
-def run(url, file_name, output_dir):
+def run(url, file_name, output_dir, check=True):
     print(f"Downloading {file_name}...")
-    file_md5 = download(url, file_name, output_dir)
+    file_md5 = download(url, file_name, output_dir, check=check)
     return file_md5
 
 

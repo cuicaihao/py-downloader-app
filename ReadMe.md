@@ -11,6 +11,24 @@ Build a powerful python based downloader app.
 - hashlib
 - multitasking
 - signal
+- gooey
+
+## GUI
+
+Run the following code to active the GUI app.
+
+```bash
+❯ pythonw app.py # on macOS
+# ❯ python app.py # on windows
+```
+
+Note: on macOS, you should `conda install python.app` to run wxPython based applications.
+
+Here are the GUI snapshots:
+
+![GUI_1](image/GUI_1.jpg)
+![GUI_2](image/GUI_2.jpg)
+![GUI_3](image/GUI_3.jpg)
 
 ## Command line
 
