@@ -109,8 +109,12 @@ def download(url: str, file_name: str, output_dir: str = './download', check=Tru
     None
 
     '''
+    # check the output dir
+    Path(output_dir).mkdir(parents=True, exist_ok=True)
 
     download_file_path = Path(output_dir) / file_name
+
+    answer_yes = True
 
     if check:
         if pre_download_check(file_name, output_dir):
