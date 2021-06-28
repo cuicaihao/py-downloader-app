@@ -8,9 +8,10 @@ from tqdm import tqdm
 import requests
 # 用于多线程操作
 import multitasking
-import signal
 # 导入 retry 库以方便进行下载出错重试
 from retry import retry
+
+import signal
 signal.signal(signal.SIGINT, multitasking.killall)
 
 # 请求头
