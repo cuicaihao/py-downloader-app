@@ -5,12 +5,12 @@ Build a powerful python based downloader app.
 ## Requirements
 
 - python>=3.6
-- requests
-- tqdm
-- retry
+- requests>=2.9.1
+- tqdm>=4.40.0
+- multitasking>=0.0.8
+- retry>=0.9.1
 - hashlib
-- multitasking
-- signal
+- signal (python included)
 - gooey (GUI only / check the Github repo)
 
 ## GUI

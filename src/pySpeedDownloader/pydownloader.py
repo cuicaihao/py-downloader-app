@@ -12,7 +12,10 @@ import multitasking
 from retry import retry
 
 import signal
+# kill all tasks on ctrl-c
 signal.signal(signal.SIGINT, multitasking.killall)
+# or, wait for task to finish on ctrl-c:
+# signal.signal(signal.SIGINT, multitasking.wait_for_tasks)
 
 # 请求头
 headers = {
