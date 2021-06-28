@@ -11,7 +11,7 @@ Created on   :2021/06/03 00:46:04
 
 # here put the import lib
 
-from src.pydownloader import run
+from src.pySpeedDownloader.pydownloader import run
 
 import os
 import json

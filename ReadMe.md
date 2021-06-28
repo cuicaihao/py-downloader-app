@@ -11,7 +11,7 @@ Build a powerful python based downloader app.
 - hashlib
 - multitasking
 - signal
-- gooey
+- gooey (GUI only / check the Github repo)
 
 ## GUI
 
