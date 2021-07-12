@@ -84,9 +84,9 @@ Note: on macOS, you should `conda install python.app` to run wxPython based appl
 
 Here are the GUI snapshots:
 
-![GUI_1](image/GUI_1.jpg)
-![GUI_2](image/GUI_2.jpg)
-![GUI_3](image/GUI_3.jpg)
+![GUI_1](https://github.com/cuicaihao/py-downloader-app/blob/gh-pages/image/GUI_1.jpg)
+![GUI_2](https://github.com/cuicaihao/py-downloader-app/blob/gh-pages/image/GUI_2.jpg)
+![GUI_3](https://github.com/cuicaihao/py-downloader-app/blob/gh-pages/image/GUI_3.jpg)
 
 ## Command line
 
